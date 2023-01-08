@@ -15,7 +15,7 @@ class Game(DirectObject):
         base.useTrackball()
         base.trackball.node().setPos(-7.55,0,6)
        # base.setBackgroundColor(1,1,1)
-        self.image = self.loadImageAsPlane('NewTestamentPsalms/NewTestament' + str(1) + '.jpg')
+        self.image = self.loadImageAsPlane('NewTestamentPsalms/NewTestament' + str(1) + '.JPG')
         self.image.reparentTo(render)
         self.image.setPos(8,15,-6)
         self.image.setScale(1)
@@ -52,14 +52,14 @@ class Game(DirectObject):
     def LoadNewTestamentImage(self,imagenum):
         base.trackball.node().setPos(-7.55,0,6)
         self.image.removeNode();
-        self.image = self.loadImageAsPlane('NewTestamentPsalms/NewTestament' + str(imagenum) + '.jpg')
+        self.image = self.loadImageAsPlane('NewTestamentPsalms/NewTestament' + str(imagenum) + '.JPG')
         self.image.reparentTo(render)
         self.image.setPos(8,15,-6)
         self.image.setScale(1)
     def LoadPsalmsImage(self,imagenum):
         base.trackball.node().setPos(-7.55,0,6)
         self.image.removeNode();
-        self.image = self.loadImageAsPlane('NewTestamentPsalms/Psalms' + str(imagenum) + '.jpg')
+        self.image = self.loadImageAsPlane('NewTestamentPsalms/Psalms' + str(imagenum) + '.JPG')
         self.image.reparentTo(render)
         self.image.setPos(8,15,-6)
         self.image.setScale(1)
